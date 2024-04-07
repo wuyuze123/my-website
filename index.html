@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>服务信息</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>我的服务信息</h1>
-    <p>欢迎查看我的服务信息。</p>
-    <h2>服务列表：</h2>
-    <ul>
-        <li>服务项目 1</li>
-        <li>服务项目 2</li>
-        <li>服务项目 3</li>
-    </ul>
-    <h2>收款码：</h2>
-    <img src="qr_code.jpg" alt="收款码">
+    <div class="container">
+        <h1>人像精修</h1>
+        <div class="service">
+            <img src="fw1.jpg" alt="服务1">
+            <p>付款时请备注购买项目</p>
+            <a id="toggleButton" class="button">购买</a>
+        </div>
+
+        
+    </div>
+
+    <div id="content" class="image-container container hidden">
+        <img src="wx.jpg" alt="图片1">
+        <img src="zfb.jpg" alt="图片2">
+    </div>
+   
+    
+
 </body>
+
+<script>
+ document.getElementById("toggleButton").addEventListener("click", function() {
+    var content = document.getElementById("content");
+    if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        content.classList.add("visible");
+    } else {
+        content.classList.remove("visible");
+        content.classList.add("hidden");
+    }
+});
+
+</script>
+
+
+
 </html>

@@ -1,0 +1,64 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+.service img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.service p {
+    text-align: center;
+}
+
+.button {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+.image-container {
+    margin-bottom: 20px;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between; /* 或者其他适合你需求的 justify-content 属性 */
+}
+
+.image-container img {
+    max-width: 48%; /* 调整图片宽度以适应容器 */
+}
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* 切换动画，可根据需要调整时间和效果 */
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+}
